@@ -1,0 +1,19 @@
+*** ./src/mrpt-1.5.0/libs/base/include/mrpt/math/matrix_adaptors.h	2017-06-29 15:40:33.040267611 +0200
+--- ../mrpt/src/mrpt/libs/base/include/mrpt/math/matrix_adaptors.h	2017-06-29 15:45:58.808411189 +0200
+***************
+*** 504,510 ****
+  				return const_reverse_iterator(*this,-1);
+  			}
+  			inline size_t size() const	{
+! 				return howMany();
+  			}
+  			inline void resize(size_t N)	{
+  				if (N!=size()) throw std::logic_error("Tried to resize a fixed-size vector");
+--- 504,510 ----
+  				return const_reverse_iterator(*this,-1);
+  			}
+  			inline size_t size() const	{
+! 				return howMany;
+  			}
+  			inline void resize(size_t N)	{
+  				if (N!=size()) throw std::logic_error("Tried to resize a fixed-size vector");
