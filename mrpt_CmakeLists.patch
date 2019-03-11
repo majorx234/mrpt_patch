@@ -7,7 +7,7 @@ index c95b5fdf6..b3816ba23 100644
  INCLUDE_DIRECTORIES(".")
  INCLUDE_DIRECTORIES("${MRPT_CONFIG_FILE_INCLUDE_DIR}")
 -
-+INCLUDE_DIRECTORIES("${PYTHON_NUMPY_INCLUDE_DIR}")
++INCLUDE_DIRECTORIES(${PYTHON_NUMPY_INCLUDE_DIR})
  # Add user supplied extra options (optimization, etc...)
  SET(USER_EXTRA_CPP_FLAGS "" CACHE STRING "Put extra compiler options here if desired")
  
